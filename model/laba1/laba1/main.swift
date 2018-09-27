@@ -18,7 +18,7 @@ var StatusMatrix = [[0.600, 0.200, 0.200],
 var State1 = 0, State2 = 0, State3 = 0, CurrStatus: Int, random: Double
 random = 0.000
 for _ in 0...100{
-    random = Double.random(in: 0.000...100.000)/100.0
+    random = Double(Int.random(in: 0...100))/100
     if (random > (StartStatus[0] + StartStatus[1])){
         CurrStatus = 2;
     }
@@ -32,12 +32,12 @@ for _ in 0...100{
     }
     //print("1 Step, Status:", CurrStatus)
     for _ in 1...100{
-        random = Double.random(in: 0.000...100.000)/100.0
+        random = Double(Int.random(in: 0...100))/100
         if random < StatusMatrix[CurrStatus][0]{
             CurrStatus = 0
             State1 += 1
         } else {
-            if random > (StatusMatrix[CurrStatus][0] + StatusMatrix[CurrStatus][1] + StatusMatrix[CurrStatus][2]){
+            if random > (StatusMatrix[CurrStatus][0] + StatusMatrix[CurrStatus][1]){
                 CurrStatus = 2
                 State3 += 1
             }
@@ -56,8 +56,6 @@ print("Эмпирически P2 =", Double(State2)/10000.0)
 print("Аналитически P2 =", StartStatus[0] * StatusMatrix[0][1] + StartStatus[1] * StatusMatrix[1][1] + StartStatus[2] * StatusMatrix[2][1])
 print()
 print("Эмпирически P3 =", Double(State3)/10000.0)
-print("Аналитически P3 =", StartStatus[0] * StatusMatrix[0][2] + StartStatus[1] * StatusMatrix[1][2] + StartStatus[2] * StatusMatrix[2][2])
-
-
+print("Аналитически P3 =", round((StartStatus[0] * StatusMatrix[0][2] + StartStatus[1] * StatusMatrix[1][2] + StartStatus[2] * StatusMatrix[2][2])*100)/100)
 
 
