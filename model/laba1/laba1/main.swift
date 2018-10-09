@@ -6,7 +6,6 @@
 //  Copyright © 2018 Ибрагим Мамадаев. All rights reserved.
 //
 import Foundation
-
 //print("Hello, World!")
 //var randomInt = Int.random(in: 0..<10000)
 //print(randomInt)
@@ -49,13 +48,15 @@ for _ in 0...100{
         //print(i, "Step, status: ", CurrStatus)
     }
 }
-print("Эмпирически P1 =", Double(State1)/10000.0)
-print("Аналитически P1 =", StartStatus[0] * StatusMatrix[0][0] + StartStatus[1] * StatusMatrix[1][0] + StartStatus[2] * StatusMatrix[2][0])
-print()
-print("Эмпирически P2 =", Double(State2)/10000.0)
-print("Аналитически P2 =", StartStatus[0] * StatusMatrix[0][1] + StartStatus[1] * StatusMatrix[1][1] + StartStatus[2] * StatusMatrix[2][1])
-print()
-print("Эмпирически P3 =", Double(State3)/10000.0)
-print("Аналитически P3 =", round((StartStatus[0] * StatusMatrix[0][2] + StartStatus[1] * StatusMatrix[1][2] + StartStatus[2] * StatusMatrix[2][2])*100)/100)
-
-
+output()
+func output()
+{
+    print("Эмпирически P1 =", Double(State1)/10000.0)
+    print("Аналитически P1 =", StartStatus[0] * StatusMatrix[0][0] + StartStatus[1] * StatusMatrix[1][0] + StartStatus[2] * StatusMatrix[2][0])
+    print()
+    print("Эмпирически P2 =", Double(State2)/10000.0)
+    print("Аналитически P2 =", StartStatus[0] * StatusMatrix[0][1] + StartStatus[1] * StatusMatrix[1][1] + StartStatus[2] * StatusMatrix[2][1])
+    print()
+    print("Эмпирически P3 =", Double(State3)/10000.0)
+    print("Аналитически P3 =", round((StartStatus[0] * StatusMatrix[0][2] + StartStatus[1] * StatusMatrix[1][2] + StartStatus[2] * StatusMatrix[2][2])*100)/100)
+}
