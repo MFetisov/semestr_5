@@ -1,0 +1,13 @@
+C:\Users\One Two\Source\Repos\CourseWork\SearchNumbers\SearchNumbers\bin\Debug\SearchNumbers.exe.config
+C:\Users\One Two\Source\Repos\CourseWork\SearchNumbers\SearchNumbers\bin\Debug\SearchNumbers.exe
+C:\Users\One Two\Source\Repos\CourseWork\SearchNumbers\SearchNumbers\bin\Debug\SearchNumbers.pdb
+C:\Users\One Two\Source\Repos\CourseWork\SearchNumbers\SearchNumbers\bin\Debug\Emgu.CV.UI.dll
+C:\Users\One Two\Source\Repos\CourseWork\SearchNumbers\SearchNumbers\bin\Debug\Emgu.CV.World.dll
+C:\Users\One Two\Source\Repos\CourseWork\SearchNumbers\SearchNumbers\bin\Debug\ZedGraph.dll
+C:\Users\One Two\Source\Repos\CourseWork\SearchNumbers\SearchNumbers\bin\Debug\Emgu.CV.UI.xml
+C:\Users\One Two\Source\Repos\CourseWork\SearchNumbers\SearchNumbers\obj\Debug\SearchNumbers.exe
+C:\Users\One Two\Source\Repos\CourseWork\SearchNumbers\SearchNumbers\obj\Debug\SearchNumbers.pdb
+C:\Users\One Two\Source\Repos\CourseWork\SearchNumbers\SearchNumbers\bin\Debug\Emgu.CV.World.xml
+C:\Users\One Two\Source\Repos\CourseWork\SearchNumbers\SearchNumbers\obj\Debug\SearchNumbers.csprojResolveAssemblyReference.cache
+C:\Users\One Two\Source\Repos\CourseWork\SearchNumbers\SearchNumbers\bin\Debug\ZedGraph.xml
+C:\Users\One Two\Source\Repos\CourseWork\SearchNumbers\SearchNumbers\bin\Debug\zh-CN\ZedGraph.resources.dll
