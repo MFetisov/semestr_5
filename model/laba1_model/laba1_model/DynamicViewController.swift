@@ -88,7 +88,9 @@ class DynamicViewController: UIViewController, UITableViewDataSource, UITableVie
             }
             
         }
-        
+        print(st1)
+        print(st2)
+        print(st3)
         mas2.append("Emperic P1 = "+String(st1/1000)+", "+String(StartStatus[0]*Matrix[0][0]+StartStatus[1]*Matrix[1][0]+StartStatus[2]*Matrix[2][0]))
         mas2.append("Emperic P2 = "+String(st2/1000)+", "+String(StartStatus[0]*Matrix[0][1]+StartStatus[1]*Matrix[1][1]+StartStatus[2]*Matrix[2][1]))
         mas2.append("Emperic P3 = "+String(st3/1000)+", "+String(StartStatus[0]*Matrix[0][2]+StartStatus[1]*Matrix[1][2]+StartStatus[2]*Matrix[2][2]))

@@ -27,10 +27,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     var staticButtonPressedFlag: Bool = false
     var dynamicButtonPressedFlag: Bool = false
-    var Matrix = [[0.6,0.2,0.2],
-                  [0.3,0.3,0.4],
-                  [0.1,0.7,0.2]]
-    var StartStatus: [Double] = []
+    var Matrix = [[0.6,50,0.2],
+                  [0.3,100,0.4],
+                  [0.1,010,0.2]]
+    var StartStatus: [Double] = [0.5, 0.2, 0.3]
     
     override func viewDidLoad() {
         

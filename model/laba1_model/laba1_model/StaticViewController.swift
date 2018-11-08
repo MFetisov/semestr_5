@@ -14,9 +14,9 @@ class StaticViewController: UIViewController, UITableViewDataSource, UITableView
     
     var mas1: [String] = []
     var StartStatus = [0.5, 0.2, 0.3]
-    var Matrix = [[0.6,0.2,0.2],
-                  [0.3,0.3,0.4],
-                  [0.1,0.7,0.2]]
+    var Matrix = [[50,50,0.2],
+                  [100,30,0.4],
+                  [20,70,0.2]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,8 +71,6 @@ class StaticViewController: UIViewController, UITableViewDataSource, UITableView
                 
             }
             
-            //print("Step,status "+String(curstatus))
-            
             mas1.append("Step, status "+String(curstatus))
             
             for i in 0...1000 {
@@ -105,20 +103,20 @@ class StaticViewController: UIViewController, UITableViewDataSource, UITableView
                     }
                 }
                 
-                //print(String(i)+" Step,status "+String(curstatus))
+                
                 mas1.append(String(i)+" Step, status "+String(curstatus))
             }
         }
         
-        // print("P1 = "+String(st1 / (st1 + st2 + st3)))
-        
-        // print("P2 = "+String(st2 / (st1 + st2 + st3)))
-        
-        // print("P3 = "+String(st3 / (st1 + st2 + st3)))
-        
-        mas1.append("P1 = "+String(st1 / (st1 + st2 + st3)))
-        mas1.append("P2 = "+String(st2 / (st1 + st2 + st3)))
-        mas1.append("P2 = "+String(st2 / (st1 + st2 + st3)))
+        print("P1 = "+String(st1 / (st1 + st2 + st3)))
+        print(st1)
+        print("P2 = "+String(-st2 / (st1 + st2 + st3)))
+        print(st2)
+        print("P3 = "+String(st3 / (st1 + st2 + st3)))
+        print(st3)
+        mas1.append("P1 = "+String(st1 / (st1 - st2 + st3)))
+        mas1.append("P2 = "+String(-st2 / (st1 - st2 + st3)))
+        mas1.append("P3 = "+String(st3 / (st1 - st2 + st3)))
         
         mas1.reverse()
         table.reloadData()
