@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartForm));
             this.enterButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.newaccbutton = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.infoButton = new System.Windows.Forms.Button();
             this.regButton = new System.Windows.Forms.Button();
@@ -55,6 +56,16 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.newAccComboBox = new System.Windows.Forms.ComboBox();
+            this.acceptButton = new System.Windows.Forms.Button();
+            this.declineButton = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.entryAdminButton = new System.Windows.Forms.Button();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,6 +85,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.newaccbutton);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.infoButton);
             this.panel1.Controls.Add(this.regButton);
@@ -83,6 +95,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(190, 550);
             this.panel1.TabIndex = 1;
+            // 
+            // newaccbutton
+            // 
+            this.newaccbutton.FlatAppearance.BorderSize = 0;
+            this.newaccbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.newaccbutton.Font = new System.Drawing.Font("Century Gothic", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.newaccbutton.ForeColor = System.Drawing.SystemColors.Control;
+            this.newaccbutton.Location = new System.Drawing.Point(3, 240);
+            this.newaccbutton.Name = "newaccbutton";
+            this.newaccbutton.Size = new System.Drawing.Size(184, 54);
+            this.newaccbutton.TabIndex = 25;
+            this.newaccbutton.Text = "Заявки";
+            this.newaccbutton.UseVisualStyleBackColor = true;
+            this.newaccbutton.Click += new System.EventHandler(this.newaccbutton_Click);
             // 
             // button4
             // 
@@ -331,11 +357,125 @@
             this.label12.TabIndex = 21;
             this.label12.Text = "github.com/ahtubcex";
             // 
+            // newAccComboBox
+            // 
+            this.newAccComboBox.FormattingEnabled = true;
+            this.newAccComboBox.Location = new System.Drawing.Point(399, 83);
+            this.newAccComboBox.Name = "newAccComboBox";
+            this.newAccComboBox.Size = new System.Drawing.Size(154, 21);
+            this.newAccComboBox.TabIndex = 22;
+            this.newAccComboBox.SelectedIndexChanged += new System.EventHandler(this.newAccComboBox_SelectedIndexChanged);
+            // 
+            // acceptButton
+            // 
+            this.acceptButton.FlatAppearance.BorderSize = 0;
+            this.acceptButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.acceptButton.Font = new System.Drawing.Font("Century Gothic", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.acceptButton.Location = new System.Drawing.Point(291, 240);
+            this.acceptButton.Name = "acceptButton";
+            this.acceptButton.Size = new System.Drawing.Size(177, 70);
+            this.acceptButton.TabIndex = 23;
+            this.acceptButton.Text = "Подтвердить";
+            this.acceptButton.UseVisualStyleBackColor = true;
+            this.acceptButton.Click += new System.EventHandler(this.acceptButton_Click);
+            // 
+            // declineButton
+            // 
+            this.declineButton.FlatAppearance.BorderSize = 0;
+            this.declineButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.declineButton.Font = new System.Drawing.Font("Century Gothic", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.declineButton.Location = new System.Drawing.Point(485, 240);
+            this.declineButton.Name = "declineButton";
+            this.declineButton.Size = new System.Drawing.Size(177, 70);
+            this.declineButton.TabIndex = 24;
+            this.declineButton.Text = "Отклонить";
+            this.declineButton.UseVisualStyleBackColor = true;
+            this.declineButton.Click += new System.EventHandler(this.declineButton_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 13.74545F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.Location = new System.Drawing.Point(367, 113);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(0, 24);
+            this.label13.TabIndex = 25;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 13.74545F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label14.Location = new System.Drawing.Point(363, 143);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(0, 24);
+            this.label14.TabIndex = 26;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 13.74545F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label15.Location = new System.Drawing.Point(366, 180);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(0, 24);
+            this.label15.TabIndex = 27;
+            // 
+            // entryAdminButton
+            // 
+            this.entryAdminButton.FlatAppearance.BorderSize = 0;
+            this.entryAdminButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.entryAdminButton.Font = new System.Drawing.Font("Century Gothic", 15.70909F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.entryAdminButton.Location = new System.Drawing.Point(414, 180);
+            this.entryAdminButton.Name = "entryAdminButton";
+            this.entryAdminButton.Size = new System.Drawing.Size(177, 70);
+            this.entryAdminButton.TabIndex = 28;
+            this.entryAdminButton.Text = "Войти";
+            this.entryAdminButton.UseVisualStyleBackColor = true;
+            this.entryAdminButton.Click += new System.EventHandler(this.entryAdminButton_Click);
+            // 
+            // textBox8
+            // 
+            this.textBox8.Font = new System.Drawing.Font("Century Gothic", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox8.Location = new System.Drawing.Point(428, 98);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.PasswordChar = '*';
+            this.textBox8.Size = new System.Drawing.Size(154, 30);
+            this.textBox8.TabIndex = 29;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Font = new System.Drawing.Font("Century Gothic", 11.78182F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox9.Location = new System.Drawing.Point(428, 137);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.PasswordChar = '*';
+            this.textBox9.Size = new System.Drawing.Size(154, 30);
+            this.textBox9.TabIndex = 30;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 13.74545F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label16.Location = new System.Drawing.Point(238, 34);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(518, 48);
+            this.label16.TabIndex = 31;
+            this.label16.Text = "Этот раздел доступен только администратору. \r\nДля продолжения необходимо авторизо" +
+    "ваться.\r\n";
+            // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(776, 550);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.entryAdminButton);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.declineButton);
+            this.Controls.Add(this.acceptButton);
+            this.Controls.Add(this.newAccComboBox);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -398,5 +538,17 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox newAccComboBox;
+        private System.Windows.Forms.Button acceptButton;
+        private System.Windows.Forms.Button declineButton;
+        private System.Windows.Forms.Button newaccbutton;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button entryAdminButton;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label16;
     }
 }
