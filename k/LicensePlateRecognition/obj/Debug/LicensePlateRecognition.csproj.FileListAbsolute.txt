@@ -14,6 +14,8 @@ C:\Program Files (x86)\emgucv-windesktop_x64-cuda 3.1.0.2504\Emgu.CV.Example\Lic
 C:\Program Files (x86)\emgucv-windesktop_x64-cuda 3.1.0.2504\Emgu.CV.Example\LicensePlateRecognition\obj\Debug\LicensePlateRecognition.csproj.GenerateResource.cache
 C:\Program Files (x86)\emgucv-windesktop_x64-cuda 3.1.0.2504\Emgu.CV.Example\LicensePlateRecognition\obj\Debug\Example.LicensePlateRecognition.exe
 C:\Program Files (x86)\emgucv-windesktop_x64-cuda 3.1.0.2504\Emgu.CV.Example\LicensePlateRecognition\obj\Debug\Example.LicensePlateRecognition.pdb
-C:\Program Files (x86)\emgucv-windesktop_x64-cuda 3.1.0.2504\Emgu.CV.Example\LicensePlateRecognition\obj\Debug\LicensePlateRecognition.csprojResolveAssemblyReference.cache
 C:\Program Files (x86)\emgucv-windesktop_x64-cuda 3.1.0.2504\Emgu.CV.Example\LicensePlateRecognition\obj\Debug\LicensePlateRecognition.StartForm.resources
 C:\Program Files (x86)\emgucv-windesktop_x64-cuda 3.1.0.2504\Emgu.CV.Example\LicensePlateRecognition\obj\Debug\LicensePlateRecognition.Properties.Resources.resources
+C:\Program Files (x86)\emgucv-windesktop_x64-cuda 3.1.0.2504\Emgu.CV.Example\LicensePlateRecognition\obj\Debug\LicensePlateRecognition.csprojAssemblyReference.cache
+C:\Program Files (x86)\emgucv-windesktop_x64-cuda 3.1.0.2504\Emgu.CV.Example\LicensePlateRecognition\obj\Debug\LicensePlateRecognition.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\emgucv-windesktop_x64-cuda 3.1.0.2504\Emgu.CV.Example\LicensePlateRecognition\obj\Debug\LicensePlateRecognition.csproj.CopyComplete

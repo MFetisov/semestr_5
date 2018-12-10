@@ -83,6 +83,8 @@ namespace LicensePlateRecognition
             textBox8.Visible = false;
             textBox9.Visible = false;
             entryAdminButton.Visible = false;
+            label17.Visible = false;
+            label16.Visible = false;
         }
 
         private void enterButton_Click(object sender, EventArgs e)
@@ -320,6 +322,8 @@ namespace LicensePlateRecognition
                 textBox8.Visible = false;
                 textBox9.Visible = false;
                 entryAdminButton.Visible = false;
+                label16.Visible = false;
+                label17.Visible = true;
             }
             else
             {

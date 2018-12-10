@@ -66,6 +66,7 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -461,11 +462,22 @@
             this.label16.Text = "Этот раздел доступен только администратору. \r\nДля продолжения необходимо авторизо" +
     "ваться.\r\n";
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Century Gothic", 13.74545F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label17.Location = new System.Drawing.Point(265, 51);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(421, 24);
+            this.label17.TabIndex = 32;
+            this.label17.Text = "Выберите заявку в вытекающем меню:";
+            // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(776, 550);
+            this.Controls.Add(this.label17);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
@@ -550,5 +562,6 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
     }
 }
